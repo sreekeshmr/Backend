@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "description": "An event-driven notification system with Express and MongoDB",
   "main": "src/server.ts",
-  "scripts": {
-    "start": "ts-node src/server.ts",
-    "dev": "nodemon src/server.ts",
-    "build": "tsc",
-    "test": "jest",
-    "lint": "eslint . --ext .ts",
-    "test:unit": "jest tests/unit",
-    "test:integration": "jest tests/integration",
-    "test:watch": "jest --watch"
-  },
+"scripts": {
+  "start": "ts-node src/server.ts",
+  "start:prod": "node dist/server.js",
+  "dev": "nodemon src/server.ts",
+  "build": "tsc",
+  "test": "jest",
+  "lint": "eslint . --ext .ts",
+  "test:unit": "jest tests/unit",
+  "test:integration": "jest tests/integration",
+  "test:watch": "jest --watch"
+},
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.1",
